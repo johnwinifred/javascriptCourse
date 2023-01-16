@@ -1,0 +1,51 @@
+Big O Notation describes the efficiency of code as the input approaches infinity. 
+We do not have to use concrete units like measuring the time or space. Instead, Big O analyze how time and space scale.
+Big O helps use to find better solutions.
+Better solutions in the sense that they use least resources - time and space.
+This is what we call the Time-Space Complexity.
+
+**Simplifying Big O Notation**
+There are two important rules;
+The Product Rule and The Sum Rule.
+**Product Rule:**
+If the Big O is the product of multiple terms, drop the constant term.
+For a constant term,the Big O notation is given as O(1).
+When using Big O notation, we are analyzing what can possibly slow down the program.
+for constant terms, it is easier to measure time and space. Instance, if it takes a painter, two hours to make a portrait,
+we can measure how long it will take him to make ten others. However, other paintings like landscape that depends on size and amount of detail becomes a variable.
+Therefore, since variables can grow, they are hence analyzed using the Big O notation.
+
+Examples of product rule:
+1. O(4*n)
+result: O(n)
+2. O(n/3) -: This can be rewritten as;
+O((1/3) * n )
+result: O(n)
+3. O(5 * n * n)
+result: 0(n^2)
+
+Sum Rule:
+If the Big O is a sum of multiple terms, pick the largest value.
+Note: if there is a variable, pick the variable. This is because the variable can grow till infinity.
+
+Eg. O(n^2 + n)
+result: n^2
+
+2. O(n + 10000 + n^5 + n^3)
+result: n^5
+
+
+CASES OF BOTH PRODUCT AND SUM RULE
+In simplifying a complex Big O Notation, first apply the Product Rule and then, the Sum Rule.
+O(5n^2 + 100n + 17)
+result:
+Applying product rule: O (n^2 + n + 1)
+Sum Rule: O(n^2);
+
+
+
+
+
+
+
+
