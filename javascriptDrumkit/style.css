@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+body{
+    background-color: rgb(130, 91, 204);
+    font-family: 'Times New Roman', Times, serif;
+}
+.keys{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+
+.key{
+    border: 2px solid black;
+    margin-right: 10px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.37);
+    width: 100px;
+    transition: all 0.07s ease;
+}
+kbd{
+    font-size: 40px;
+    color: white;
+}
+.sound{
+    display: flex;
+    flex-direction: column;
+    color: gold;
+}
+.playing{
+    width:120px;
+    border: 2px solid gold;
+    transform: scale(1,1);
+    box-shadow: 0 0 1rem #ffc600;
+
+}
